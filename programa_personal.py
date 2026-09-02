@@ -1,0 +1,19 @@
+# programa_personal.py - v1.0
+PUNTOS_POR_SEGUNDO = 1
+
+print("--- Mini Juego: Acumulador de Puntos ---")
+
+nombre_jugador = input("Introduce tu nombre de jugador: ")
+clase_personaje = input("Introduce tu clase (Guerrero/Mago): ")
+segundos_jugados = input("Introduce los segundos jugados: ")
+
+segundos_jugados = int(segundos_jugados)
+
+puntos_totales = segundos_jugados * PUNTOS_POR_SEGUNDO
+
+print("\n--- Resumen de la Sesión ---")
+print(f"Jugador: {nombre_jugador}")
+print(f"Clase: {clase_personaje}")
+print(f"Segundos jugados: {segundos_jugados}")
+print(f"Puntos obtenidos: {puntos_totales}")
+print("¡Gracias por jugar!")
